@@ -24,6 +24,7 @@ The project should contain regular git commits with appropriate commit messages 
 The working project should be deployed and the link to the live site provided on the Github repository.
 The business logic and UI logic of the code should be separated.
 The project code should be consistently indented & follows proper syntax which includes camelcase and appropriate naming of variables.
+
 Technologies used.
 Html5
 Css
