@@ -1,5 +1,5 @@
 DELANI STUDIO.
-Live Link
+Live Link; https://jobmwaniki.github.io/Week3-IP-Final/
 
 The goal of this project is to practice Jquery concepts.
 By Job Mwaniki
