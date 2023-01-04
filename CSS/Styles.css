@@ -69,7 +69,7 @@ footer p {
   margin: 20px;
 }
 * {
-  border-sizing: border-box;
+  border: border-box;
 }
 .portfolio .column {
   float: left;
