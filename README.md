@@ -26,6 +26,7 @@ The business logic and UI logic of the code should be separated.
 The project code should be consistently indented & follows proper syntax which includes camelcase and appropriate naming of variables.
 
 Technologies used.
+
 Html5
 Css
 Javascript
