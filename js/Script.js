@@ -1,42 +1,36 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $(".clickable1").click(function() {
-      $(".design-show").toggle();
-      $(".design-hide").toggle();
-    });
-    $(".clickable2").click(function() {
-      $(".development-show").toggle();
-      $(".development-hide").toggle();
-    });
-    $(".clickable3").click(function() {
-      $(".productManagement-show").toggle();
-      $(".productManagement-hide").toggle();
-    });
-    $(function(){
-      var works = ["work1","work2","work3","work4","work5","work6","work7","work8"]
-      works.forEach(function(work){
-        $("#"+ work).hover(function (){
-          $(this).width(1.25*$(this).width());
-          $(this).height(1.25*$(this).height());
-          $(this).css("opacity","0.3");
-        },
-        function () {
-          $(this).width(0.8*$(this).width());
-          $(this).height(0.8*$(this).height());
-          $(this).css("opacity", "1");
-          event.preventDefault();
+  $("#design").click(function(){
+    $("#design-showing").toggle();
+    $(".hide-design-image").toggle();
+  })
 
-        });
-        });
-      });
-  $("form#contacts").submit(function(event) {
+  $("#development").click(function(){
+    $("#development-showing").toggle();
+    $(".hide-development-image").toggle();
+  })
 
-    var names= $("#name").val();
-    var email= $("#mce-email").val();
-    var message = $("#YourMessage").val();
-    alert("Dear " +names+",your message has been received. Thank you for reaching out to us.");
-    event.preventDefault();
+  $("#productManagement").click(function(){
+    $("#product-management-showing").toggle();
+    $(".hide-product-management").toggle();
+  })
 
-
-});
+  //Insert white box upo hover
+  $(".Hover").hover(function(){
+    $(this).animate({opacity:'1'});
+  },
+  function(){
+    $(this).animate({opacity:'0'});
+  })
+$('.submit').click(function () {
+        var Name = $('#mce-FNAME').val();
+        var Email = $('#mce-EMAIL').val();
+        var Message = $('#mce-MESSAGE');
+        var key ='c8fbd9a0cf3958e02be2822e55cfbfc5-us4';
+        if (Name == '' || Email == '' || Message == '') {
+            alert('Please make sure you have filled in the form correctly!');
+        } else {
+            alert(' Hi ' + Name + ' We have received your message. Thank you for reaching out to us.');
+        }
+  });
 });
