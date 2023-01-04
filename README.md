@@ -37,7 +37,7 @@ Known Bugs
 The mail chimp API does not connect to the webpage.
 There is no email validation beyond the default HTML5 validation of the input email.
 License
-MIT License c (2022) Job mwaniki
+MIT License c (2023) Job mwaniki
 
 Collaborate
 If you run into any issues or have questions, ideas or concerns, drop an email to jobmwanikinjuguna@gmail.com or make a contribution to the code.
